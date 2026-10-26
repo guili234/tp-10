@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registrar Vehiculo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand bg-body">
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item"><a class="nav-link" href="index-1inicio.html">Inicio</a></li>
+                <li class="nav-item"><a class="nav-link" href="index-2registrarconductor.html">Registrar Conductor</a></li>
+                <li class="nav-item"><a class="nav-link" href="index-3verconductor.html">Ver Conductor</a></li>
+                <li class="nav-item"><a class="nav-link active" href="index-4registrarvehiculo.html">Registrar Vehiculo</a></li>
+                <li class="nav-item"><a class="nav-link" href="index-5vervehiculo.html">Ver Vehiculo</a></li>
+                <li class="nav-item"><a class="nav-link" href="index-6verconsecionario.html">Ver concesionaria</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="texto">
+        <form onsubmit="return false;">
+            <label for="marca">Marca del vehículo</label>
+            <input type="text" id="marca">
+
+            <label for="modelo">Modelo</label>
+            <input type="text" id="modelo">
+
+            <label for="patente">Patente   ejemplo: AA 234 NW</label>
+            <input type="text" id="patente">
+
+            <label for="tcarnet">Tipo de carnet (ejemplo A1, A2, A3, B1, B2)</label>
+            <input type="text" id="tcarnet">
+        </form>
+
+        <div class="botones">
+            <button class="enviar_db" type="button" onclick="guardar_db()">ENVIAR</button>
+        </div>
+    </div>
+
+    <script src="script-8crearvehiculo.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+</body>
+</html>

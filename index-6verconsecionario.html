@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ver concesionaria</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style3.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand bg-body">
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item"><a class="nav-link" href="index-1inicio.html">Inicio</a></li>
+                <li class="nav-item"><a class="nav-link" href="index-2registrarconductor.html">Registrar Conductor</a></li>
+                <li class="nav-item"><a class="nav-link" href="index-3verconductor.html">Ver Conductor</a></li>
+                <li class="nav-item"><a class="nav-link" href="index-4registrarvehiculo.html">Registrar Vehiculo</a></li>
+                <li class="nav-item"><a class="nav-link" href="index-5vervehiculo.html">Ver Vehiculo</a></li>
+                <li class="nav-item"><a class="nav-link active" href="index-6verconsecionario.html">Ver concesionaria</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="texto">
+        <form >
+            <label for="nombre_filtro">Filtrar por Conductor y Vehiculo</label>
+            <input type="text" id="nombre_filtro">
+        </form>
+        
+        <div class="botones">
+            <button type="button" onclick="filtrar_A1()">FILTRAR A1</button>
+            <button type="button" onclick="filtrar_A2()">FILTRAR A2</button>
+            <button type="button" onclick="filtrar_A3()">FILTRAR A3</button>
+            <button type="button" onclick="filtrar_B1()">FILTRAR B1</button>
+            <button type="button" onclick="filtrar_B2()">FILTRAR B2</button>
+            <button type="button" onclick="filtrar_seguro()">FILTRAR SEGURO</button>
+            <button type="button" onclick="ver_todo()">VER TODO</button>
+        </div>
+    </div>
+
+    <div class="marco_uno" id="div_resultados_edinicio"></div>
+    <div class="marco_dos" id="div_resultados_dbinicio"></div>
+
+    <script src="filtro.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+</body>
+</html>
